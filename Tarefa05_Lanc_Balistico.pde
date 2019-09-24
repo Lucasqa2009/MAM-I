@@ -104,7 +104,7 @@ void mostraTexto()
   //Calcula a velocidade resultante num dado tempo
   float vResultante = sqrt(sq(vVertFinal) + sq(vHor0));
 
-  //Escreve os valores dos vetores que atuam na bola
+  //Escreve em Strings os valores dos vetores que atuam na bola
   String s = "Vel. Resultante: " + nf(vResultante, 0, 2) + " m/s";
   String s2 = "Vel. Vertical: " + nf(vVertFinal, 0, 2) + " m/s";
   String s3 = "Vel. Horizontal: " + nf(vHor0, 0, 2) + " m/s";
@@ -115,7 +115,7 @@ void mostraTexto()
   float auxHor = 0;
   float auxVert = 0;
   if (MRU(vHor0, t) > 365)
-    auxHor = 200;
+    auxHor = 250;
   if (distVert < 110)
     auxVert = 115;
     
